@@ -7,3 +7,7 @@ command
 
 
 python filename.py
+
+or
+
+python3 filename.py
