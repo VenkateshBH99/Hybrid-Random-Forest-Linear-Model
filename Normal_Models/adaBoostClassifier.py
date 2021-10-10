@@ -26,14 +26,15 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
+
 #EXPLORING THE DATASET
 
 dataset.num.value_counts()
 
 
 # Fitting Naive Bayes to the Training set
-from sklearn.ensemble import RandomForestClassifier
-classifier =RandomForestClassifier(n_estimators=20)
+from sklearn.ensemble import AdaBoostClassifier
+classifier =AdaBoostClassifier()
 classifier.fit(X_train, y_train)
 
 

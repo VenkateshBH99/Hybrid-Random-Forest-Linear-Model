@@ -11,8 +11,8 @@ y = dataset.iloc[:, 13].values
 
 #handling missing data
 
-from sklearn.preprocessing import Imputer
-imputer=Imputer(missing_values='NaN',strategy='mean',axis=0)
+from sklearn.impute import SimpleImputer
+imputer=SimpleImputer(missing_values=np.nan,strategy='mean')
 imputer=imputer.fit(X[:,11:13])
 X[:,11:13]=imputer.transform(X[:,11:13])
 
