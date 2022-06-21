@@ -4,7 +4,7 @@ Heart disease prediction using normal models and hybrid random forest linear mod
 
 runfile:
 
-command
+commands:
 
 
 python filename.py
